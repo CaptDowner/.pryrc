@@ -65,134 +65,154 @@ a great tool pry is for development, and what you can do with it.
 
 Here is the output of the normal 'help' command:
 
-Help
-  - help               - Show a list of commands or information about a specific command
+Help   
+----  
+  Command  | Function 
+-----------|---------------------------------
+ help      | Show a list of commands or information about a specific command
 
 Context
-  - cd                 - Move into a new context (object or scope).
-  - find-method        - Recursively search for a method within a Class/Module or the current namespace.
-  - ls                 - Show the list of vars and methods in the current scope.
-  - pry-backtrace      - Show the backtrace for the Pry session.
-  - raise-up           - Raise an exception out of the current pry instance.
-  - reset              - Reset the REPL to a clean state.
-  - whereami           - Show code surrounding the current context.
-  - wtf?               - Show the backtrace of the most recent exception.
+-------
+  Command      | Function 
+---------------|--------------------------------------------------------------------------------
+ cd            | Move into a new context (object or scope).
+ find-method   | Recursively search for a method within a Class/Module or the current namespace.
+ ls            | Show the list of vars and methods in the current scope.
+ pry-backtrace | Show the backtrace for the Pry session.
+ raise-up      | Raise an exception out of the current pry instance.
+ reset         | Reset the REPL to a clean state.
+ whereami      | Show code surrounding the current context.
+ wtf?          | Show the backtrace of the most recent exception.
 
 Editing
-  - !                  - Clear the input buffer.
-  - amend-line         - Amend a line of input in multi-line mode.
-  - edit               - Invoke the default editor on a file.
-  - hist               - Show and replay Readline history.
-  - play               - Playback a string variable or a method or a file as input.
-  - show-input         - Show the contents of the input buffer for the current multi-line expression.
+-------
+  Command     | Function 
+--------------|------------------------------------------------------------------------------
+ !            | Clear the input buffer.
+ amend-line   | Amend a line of input in multi-line mode.
+ edit         | Invoke the default editor on a file.
+ hist         | Show and replay Readline history.
+ play         | Playback a string variable or a method or a file as input.
+ show-input   | Show the contents of the input buffer for the current multi-line expression.
 
 Introspection
-  - ri                 - View ri documentation.
-  - show-source        - Show the source for a method or class.
-  - stat               - View method information and set _file_ and _dir_ locals.
+-------------
+  Command     | Function 
+--------------|---------------------------------------------------------
+ ri           | View ri documentation.
+ show-source  | Show the source for a method or class.
+ stat         | View method information and set _file_ and _dir_ locals.
 
 Gems
-  - gem-cd             - Change working directory to specified gem's directory.
-  - gem-install        - Install a gem and refresh the gem cache.
-  - gem-list           - List and search installed gems.
-  - gem-open           - Opens the working directory of the gem in your editor
+----
+  Command     | Function 
+--------------|-------------------------------------------------------
+ gem-cd       | Change working directory to specified gem's directory.
+ gem-install  | Install a gem and refresh the gem cache.
+ gem-list     | List and search installed gems.
+ gem-open     | Opens the working directory of the gem in your editor
 
 Commands
-  - import-set         Import a Pry command set.
-  - install-command    Install a disabled command.
+--------
+  Command        | Function 
+-----------------|---------------------------------
+ import-set      | Import a Pry command set.
+ install-command | Install a disabled command.
 
 Aliases
-  - !!!                - Alias for `exit-program`
-  - !!@                - Alias for `exit-all`
-  - $                  - Alias for `show-source`
-  - .cls               - Alias for `.clear`
-  - ?                  - Alias for `show-doc`
-  - breakpoint         - Alias for `break`
-  - breaks             - Alias for `breakpoints`
-  - c                  - Alias for `continue`
-  - clipit             - Alias for `gist --clip`
-  - f                  - Alias for `finish`
-  - file-mode          - Alias for `shell-mode`
-  - history            - Alias for `hist`
-  - jist               - Alias for `gist`
-  - n                  - Alias for `next`
-  - quit               - Alias for `exit`
-  - quit-program       - Alias for `exit-program`
-  - reload-method      - Alias for `reload-code`
-  - s                  - Alias for `step`
-  - show-method        - Alias for `show-source`
-  - w                  - Alias for `whereami`
+-------
+  Command      | Function 
+---------------|---------------------------------
+ !!!           | Alias for `exit-program`
+ !!@           | Alias for `exit-all`
+ $             | Alias for `show-source`
+ .cls          | Alias for `.clear`
+ ?             | Alias for `show-doc`
+ breakpoint    | Alias for `break`
+ breaks        | Alias for `breakpoints`
+ c             | Alias for `continue`
+ clipit        | Alias for `gist --clip`
+ f             | Alias for `finish`
+ file-mode     | Alias for `shell-mode`
+ history       | Alias for `hist`
+ jist          | Alias for `gist`
+ n             | Alias for `next`
+ quit          | Alias for `exit`
+ quit-program  | Alias for `exit-program`
+ reload-method | Alias for `reload-code`
+ s             | Alias for `step`
+ show-method   | Alias for `show-source`
+ w             | Alias for `whereami`
 
 Input and Output
-  - .<shell command>   - All text following a '.' is forwarded to the shell.
-  - cat                - Show code from a file, Pry's input buffer, or the last exception.
-  - fix-indent         - Correct the indentation for contents of the input buffer
-  - save-file          - Export to a file using content from the REPL.
-  - shell-mode         - Toggle shell mode. Bring in pwd prompt and file completion.
+----------------
+  Command          | Function 
+-------------------|---------------------------------
+ .<shell command>  | All text following a '.' is forwarded to the shell.
+ cat               | Show code from a file, Pry's input buffer, or the last exception.
+ fix-indent        | Correct the indentation for contents of the input buffer
+ save-file         | Export to a file using content from the REPL.
+ shell-mode        | Toggle shell mode. Bring in pwd prompt and file completion.
 
 Misc
-  - gist               - Playback a string variable or a method or a file as input.
-  - pry-version        - Show Pry version.
-  - reload-code        - Reload the source file that contains the specified code object.
-  - simple-prompt      - Toggle the simple prompt.
-  - toggle-color       - Toggle syntax highlighting.
+----
+  Command       | Function 
+ gist               | Playback a string variable or a method or a file as input.
+ pry-version        | Show Pry version.
+ reload-code        | Reload the source file that contains the specified code object.
+ simple-prompt      | Toggle the simple prompt.
+ toggle-color       | Toggle syntax highlighting.
 
 Navigating Pry
-  - !pry               - Start a Pry session on current self.
-  - disable-pry        - Stops all future calls to pry and exits the current session.
-  - exit               - Pop the previous binding.
-  - exit-all           - End the current Pry session.
-  - exit-program       - End the current program.
-  - jump-to            - Jump to a binding further up the stack.
-  - nesting            - Show nesting information.
-  - switch-to          - Start a new subsession on a binding in the current stack.
+--------------
+  Command     | Function 
+--------------|--------------------------------------------------------------
+ !pry         | Start a Pry session on current self.
+ disable-pry  | Stops all future calls to pry and exits the current session.
+ exit         | Pop the previous binding.
+ exit-all     | End the current Pry session.
+ exit-program | End the current program.
+ jump-to      | Jump to a binding further up the stack.
+ nesting      | Show nesting information.
+ switch-to    | Start a new subsession on a binding in the current stack.
 
 pry-debugger (v0.2.2)
-  - break              - Set or edit a breakpoint.
-  - breakpoints        - List defined breakpoints.
-  - continue           - Continue program execution and end the Pry session.
-  - finish             - Execute until current stack frame returns.
-  - next               - Execute the next line within the current stack frame.
-  - step               - Step execution into the next line or method.
-Misc
-  - gist               - Playback a string variable or a method or a file as input.
-  - pry-version        - Show Pry version.
-  - reload-code        - Reload the source file that contains the specified code object.
-  - simple-prompt      - Toggle the simple prompt.
-  - toggle-color       - Toggle syntax highlighting.
-
-Navigating Pry
-  - !pry               - Start a Pry session on current self.
-  - disable-pry        - Stops all future calls to pry and exits the current session.
-  - exit               - Pop the previous binding.
-  - exit-all           - End the current Pry session.
-  - exit-program       - End the current program.
-  - jump-to            - Jump to a binding further up the stack.
-  - nesting            - Show nesting information.
-  - switch-to          - Start a new subsession on a binding in the current stack.
-
-pry-debugger (v0.2.2)
-  - break              - Set or edit a breakpoint.
-  - breakpoints        - List defined breakpoints.
-  - continue           - Continue program execution and end the Pry session.
-  - finish             - Execute until current stack frame returns.
-  - next               - Execute the next line within the current stack frame.
-  - step               - Step execution into the next line or method.
+---------------------
+  Command      | Function 
+---------------|---------------------------------
+ break         | Set or edit a breakpoint.
+ breakpoints   | List defined breakpoints.
+ continue      | Continue program execution and end the Pry session.
+ finish        | Execute until current stack frame returns.
+ next          | Execute the next line within the current stack frame.
+ step          | Step execution into the next line or method.
 
 pry-docmore (v0.1.1)
-  - show-doc           - Show the documentation for a method/class/keyword/global. Aliases: ?
-  - show-docmores      - List keywords and vars covered by pry-docmore
+--------------------
+  Command       | Function 
+----------------|---------------------------------
+ show-doc       | Show the documentation for a method/class/keyword/global. Aliases: ?
+ show-docmores  | List keywords and vars covered by pry-docmore
 
 pry-rescue (v1.2.0)
-  - cd-cause           - Move to the exception that caused this exception to happen
-  - try-again          - Re-try the code that caused this exception
+-------------------
+  Command       | Function 
+----------------|-----------------------------------------------------------------
+ cd-cause       | Move to the exception that caused this exception to happen
+ try-again      | Re-try the code that caused this exception
 
 pry-stack_explorer (v0.4.9.1)
-  - down               - Go down to the callee's context.
-  - frame              - Switch to a particular frame.
-  - show-stack         - Show all frames
-  - up                 - Go up to the caller's context.
+-----------------------------
+ Command      | Function 
+--------------|---------------------------------
+ down         | Go down to the callee's context.
+ frame        | Switch to a particular frame.
+ show-stack   | Show all frames
+ up           | Go up to the caller's context.
 
 pry-theme (v1.0.0)
-  - pry-theme          - Manage your Pry themes.
+------------------
+ Command       | Function 
+---------------|-------------------------
+ pry-theme     | Manage your Pry themes.
 
