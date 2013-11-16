@@ -10,28 +10,31 @@ Most of these are ruby one-liners, but they may help ruby-nubies
 get a handle on some of the basic language syntax.
 
 Pry custom commands defined in my .pryrc:
-  - cat(f)         - Display text file contents.
-  - chk	           - List current startup info for services.
-  - dt	           - Show the system date and time.
-  - fl(fn)         - Load and execute a Ruby source file.
-  - gl2(str)       - List gems matching search parameter.
-  - glist          - List all installed gems.
-  - lc	           - Display only filenames in multiple column format.
-  - lf	           - List only filenames, one per line, in alpha order.
-  - loc	           - Display which computer is in use.
-  - lpci           - List all pci devices.
-  - lsa	           - List all files in filename order.
-  - lsd	           - List only directories.
-  - lss	           - List all files by size from smallest to largest.
-  - lusb           - List all usb devices.
-  - path           - Display current PATH.
-  - pm	           - Show methods defined in .pryrc.
-  - pss	           - Display process list.
-  - pwd	           - Print (current) working directory.
-  - rl 	           - Reload and excute the most recently loaded ruby source file.
-  - rqa(f)         - Search for installed RPM.
-  - sip	           - Show location, current ip(s) and network addresses.
-  - time(&b)       - Display execution timing.
+
+Command   | Function
+----------|-------------------------------------------------------------------              
+cat(f)    | Display text file contents.
+chk	  | List current startup info for services.
+dt	  | Show the system date and time.
+fl(fn)    | Load and execute a Ruby source file.
+gl2(str)  | List gems matching search parameter.
+glist     | List all installed gems.
+lc	  | Display only filenames in multiple column format.
+lf	  | List only filenames, one per line, in alpha order.
+loc	  | Display which computer is in use.
+lpci      | List all pci devices.
+lsa	  | List all files in filename order.
+lsd	  | List only directories.
+lss	  | List all files by size from smallest to largest.
+lusb      | List all usb devices.
+path      | Display current PATH.
+pm	  | Show methods defined in .pryrc.
+pss	  | Display process list.
+pwd	  | Print (current) working directory.
+rl 	  | Reload and excute the most recently loaded ruby source file.
+rqa(f)    | Search for installed RPM.
+sip	  | Show location, current ip(s) and network addresses.
+time(&b)  | Display execution timing.
 
 Help using Pry
 
